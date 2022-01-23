@@ -6,4 +6,4 @@
 |                |          |            |                              |                     |                  |
 |                |          |            |                              |                     |                  |
 
-Discord Server Invite : [INSERT NON EXPIRING SERVER INVITE] 
+Discord Server Invite : https://discord.gg/NJheVvkAzp
