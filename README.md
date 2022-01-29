@@ -21,7 +21,6 @@ Stellar Jeopardy is a Jeopardy-inspired game where traditionally three contestan
 Stellar Jeopardy is a Jeopardy-inspired webapp programmed in JavaScript, which is designed to let users play, host and join private and public matches. In addition to this, Stellar Jeopardy will support many unique features including:
 
 - Create a User profile, allowing a user to create custom boards
-- <img src="https://cdn.discordapp.com/attachments/934508752940449876/936368084451729418/unknown.png" width="100%"></p>
 - Host custom matches with desired game and players settings
 - Host *Event* matches which allow for a user to host multiple matches for larger parties of players
 - Browse publically uploaded boards and host a match using them
@@ -36,7 +35,6 @@ We at Stellar were inspired to develop an easy-to-use webapp for a classic game 
 
 ### The following are pages which will be used in the game:
 - The default Webapp page will allow users to either login with their account, create an account, or join a game as a guest using a match-link.
-<img src="https://cdn.discordapp.com/attachments/934508752940449876/936368084451729418/unknown.png" width="100%"></p>
 - After login, the user will see the Stellar Jeopardy homepage where they may inspect their account, join a match using a match-link, spectate a match using a match-link, or host a game
 - If hosting a game, the user may either select in-house boards, select a custom board (created by the user), or browse public boards to choose from
 - The public board browse page will let the user sort public boards based on stats (most likes, difficulty, etc.)
