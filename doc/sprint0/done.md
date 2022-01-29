@@ -1,0 +1,3 @@
+- Features will be considered done when all the requirements listed for the feature are implemented
+- Each feature should be tested by at least two different team members to ensure that all the requirements are met
+- Code for each feature should be reviewed by at least two different team members
