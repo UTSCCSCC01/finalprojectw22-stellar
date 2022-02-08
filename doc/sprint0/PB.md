@@ -6,6 +6,8 @@
 
 Priority: Medium
 
+Points: 5
+
 As a user I want to be able to create an account so that I can save my own game data. 
 
 Criteria of Satisfaction:
@@ -16,6 +18,8 @@ Criteria of Satisfaction:
 **STELLAR-2 Select Category and Question**
 
 Priority: High 
+
+Points: 5
 
 As a player of the game, I want to be able to select the category and question of my choice when it is my turn so that I can attempt to answer the question.
 
@@ -28,9 +32,11 @@ Criteria of Satisfaction:
 
 Priority: High 
 
+Points: 8
+
 As a player of the game, I want to be able to answer the question after picking it, so that I can get points if it is correct and continue to answer more questions. 
 
-Criteria of Satisfaction:
+Criteria of Satisfaction: 
 
 1. Show the selected question to the player.
 2. Based on the pre-selected time per turn, start a timer for the player to answer the question within that time. 
@@ -40,6 +46,8 @@ Criteria of Satisfaction:
 **STELLAR-4 Multiple Players**
 
 Priority: High 
+
+Points: 13
 
 As a user, I want to be able to play with other players so there can be a competitive element to the game. 
 
@@ -52,7 +60,9 @@ Criteria of Satisfaction:
 
 Priority: High 
 
-As a user I should be able to create my own game/match with my preferred settings so that I can play the game. 
+Points: 13
+
+As a user I should be able to create my own game/match with my preferred settings so that I can play the game.
 
 Criteria of Satisfaction: 
 
@@ -67,6 +77,8 @@ Criteria of Satisfaction:
 
 Priority: high
 
+Points: 8
+
 As a user I want to be able to join a match not created by me so that I can play the game without having to create my own match.
 
 Criteria of Satisfaction: 
@@ -77,6 +89,8 @@ Criteria of Satisfaction:
 **STELLAR-7 Generate Invitation Code for Private Matches**
 
 Priority: Medium 
+
+Points: 3
 
 As the host/creator of a match I want to be able to create private matches so that I can invite people I want to play with. 
 
@@ -91,6 +105,8 @@ Criteria of Satisfaction:
 
 Priority: Medium 
 
+Points: 3
+
 As a user I want to be able to join a private match so that I can play with people I know or people I desire to play with. 
 
 Criteria of Satisfaction:
@@ -101,6 +117,8 @@ Criteria of Satisfaction:
 **STELLAR-9 Play Game Without Account (Guest)**
 
 Priority: High
+
+Points: 5
 
 As a player I want the ability to play the game without an account so that I don’t have to worry about remembering my password or username. 
 
@@ -114,6 +132,8 @@ Criteria of Satisfaction:
 
 Priority: Medium 
 
+Points: 13
+
 As a registered user, I want to be able to create my own game board so that I can include my own categories and questions. 
 
 Criteria of Satisfaction: 
@@ -125,6 +145,8 @@ Criteria of Satisfaction:
 
 Priority: Medium
 
+Points: 3
+
 As a creator of game boards, I want to be able to share my game boards with the public, so others can play them. 
 
 Criteria of Satisfaction: 
@@ -135,6 +157,8 @@ Criteria of Satisfaction:
 **STELLAR-12 Find and Filter Game Boards** 
 
 Priority: Low 
+
+Points: 5
 
 As a user, I want to be able to search and filter for a particular public game board so that I can easily find a gameboard of my type. 
 
@@ -151,6 +175,8 @@ Criteria of Satisfaction:
 
 Priority: Low 
 
+Points: 8
+
 As a user, I want to know more about public game boards so that I can make a decision on playing them or not. 
 
 Criteria of Satisfaction: 
@@ -163,6 +189,8 @@ Criteria of Satisfaction:
 
 Priority: Medium
 
+Points: 8
+
 As a player I want to be able to text chat with the other players so that I can communicate with them. 
 
 Criteria of Satisfaction: 
@@ -174,6 +202,8 @@ Criteria of Satisfaction:
 
 Priority: Low 
 
+Points: 3
+
 As a player, I want to be able to put in a “close-enough” request for my answer, so that I can have a chance to get points. 
 
 Criteria of Satisfaction: 
@@ -183,7 +213,9 @@ Criteria of Satisfaction:
 
 **STELLAR-16 Spectate Matches**
  
-Priority: Medium 
+Priority: Medium
+
+Points: 3
 
 As a user I want to be able to spectate matches so that I can watch others play the game. 
 
@@ -197,6 +229,8 @@ Criteria of Satisfaction:
 
 Priority: Medium
 
+Points: 8
+
 As a host, I want to be able to create and manage multiple private matches, so that I can accommodate larger groups of people. 
 
 Criteria of Satisfaction:
@@ -208,6 +242,8 @@ Criteria of Satisfaction:
 **STELLAR-18 Host Privileges**
  
 Priority: Medium
+
+Pointa: 5
 
 As a host, I want to be able to use special commands not available to players, so that I can manage private match(s). 
 
@@ -224,6 +260,8 @@ Criteria of Satisfaction:
 
 Priority: Low 
 
+Points: 3
+
 As a user I want to see animations and hear sound effects when I play the game so that the game is more immersive and attractive to play. 
 
 Criteria of Satisfaction:
@@ -234,6 +272,8 @@ Criteria of Satisfaction:
 **STELLAR-20 Pick Colour Scheme of Custom Boards**
 
 Priority: Low 
+
+Points: 1
 
 As a creator of boards, I want to be able to pick the colour scheme of my boards so that I can organize them better. 
 
