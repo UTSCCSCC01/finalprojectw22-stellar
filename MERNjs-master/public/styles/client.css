@@ -1,0 +1,21 @@
+/*!
+ * MERNjs v2.0.0 (http://mern.js.org/)
+ * Author Muhammad Mohaiminul Islam <IamMohaiminul>
+ */
+
+body {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.navbar-brand {
+  text-transform: none;
+}
+
+.msg-h1 {
+  text-transform: none;
+}
+
+.fixed-bottom {
+  padding-top: 20px;
+}
