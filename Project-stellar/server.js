@@ -9,7 +9,18 @@ const app = express()
 const expressLayouts = require("express-ejs-layouts")
 
 //indexRouter will let our app to use our index in controllers.
-const indexRouter = require('./controllers/index')
+// const indexRouter = require('./controllers/index')
+
+//https://www.youtube.com/watch?v=7CqJlxBYj-M
+const cors = require('cors');
+app.use(cors());
+app.use(express.json());
+
+const exercisesRouter = require('./controllers/exercises');
+const usersRouter = require('./controllers/users');
+app.use('/exercises', exercisesRouter)
+app.use('/users', usersRouter)
+////////////////////////////////////////////
 
 //Configuring our app 
 app.set('view engine', 'ejs')
@@ -35,7 +46,7 @@ db.on('error', error => console.error(error))
 db.once('open', () => console.log('Connected to Mongoose'))
 
 //Using our indexRouter. (Basically our app will export information from our index file in controllers)
-app.use('/', indexRouter)
+// app.use('/', indexRouter)
 
 //Telling our app to listen to our localhost:3000 
 app.listen(process.env.PORT || 3000)
