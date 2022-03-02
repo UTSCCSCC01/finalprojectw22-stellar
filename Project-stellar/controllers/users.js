@@ -9,12 +9,21 @@ router.route('/').get((req, res) => {
 
 router.route('/add').post((req, res) => {
   const username = req.body.username;
+  const password = req.body.password;
 
-  const newUser = new User({username});
+  const newUser = new User({username, password});
 
   newUser.save()
-    .then(() => res.json('User added!'))
+    .then(() => res.json('New user saved to database.'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
+
+
+router.route('/delete').delete((req, res) => {
+  User.findByIdAndDelete(req.params)
+    .then(() => res.json('User deleted.'))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
 
 module.exports = router;
