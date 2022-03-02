@@ -16,9 +16,7 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-const exercisesRouter = require('./controllers/exercises');
 const usersRouter = require('./controllers/users');
-app.use('/exercises', exercisesRouter)
 app.use('/users', usersRouter)
 ////////////////////////////////////////////
 
