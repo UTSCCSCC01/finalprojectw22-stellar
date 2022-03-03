@@ -16,9 +16,7 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-const exercisesRouter = require('./controllers/exercises');
 const usersRouter = require('./controllers/users');
-app.use('/exercises', exercisesRouter)
 app.use('/users', usersRouter)
 ////////////////////////////////////////////
 
@@ -49,5 +47,5 @@ db.once('open', () => console.log('Connected to Mongoose'))
 // app.use('/', indexRouter)
 
 //Telling our app to listen to our localhost:3000 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 5000)
 
