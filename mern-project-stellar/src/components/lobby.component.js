@@ -1,6 +1,8 @@
 import { Button } from 'bootstrap';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { EditText, EditTextarea } from 'react-edit-text';
+import 'react-edit-text/dist/index.css';
 
 
 export default class Lobby extends Component {
@@ -48,19 +50,19 @@ export default class Lobby extends Component {
 
                 <table className='players child'>
                   <tr>
-                    <th className='name'>Player 1</th>
+                    <th className='name'><EditText defaultValue='Player 1'/></th>
                     <th className='status'>{this.state.text}</th>
                   </tr>
                   <tr>
-                    <th className='name'>Empty</th>
+                    <th className='name'><EditText defaultValue='Empty'/></th>
                     <th className='status'>Not Ready</th>
                   </tr>
                   <tr>
-                    <th className='name'>Empty</th>
+                    <th className='name'><EditText defaultValue='Empty'/></th>
                     <th className='status'>Not Ready</th>
                   </tr>
                   <tr>
-                    <th className='name'>Empty</th>
+                    <th className='name'><EditText defaultValue='Empty'/></th>
                     <th className='status'>Not Ready</th>
                   </tr>
 
