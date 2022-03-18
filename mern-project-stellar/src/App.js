@@ -13,6 +13,7 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import UserLogin from "./components/user-login.component.js";
 import GuessAnswer from "./components/guess-answer.component.js";
+import BoardPage from "./components/board-page.component";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/user" element={<CreateUser/>} />
         <Route path="/login" element={<UserLogin/>} />
         <Route path="/guess" element={<GuessAnswer/>} />
+        <Route path="/boardpage" element={<BoardPage/>} />
       </Routes>
     </Router>
   );
