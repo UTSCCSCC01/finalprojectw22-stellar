@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
-import PopUp from "./PopUp";
+// import PopUp from "./PopUp";
 
 
 export default class BoardPage extends Component {

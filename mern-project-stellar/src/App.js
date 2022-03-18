@@ -24,7 +24,7 @@ function App() {
     return (
     <Router>
       <Routes>
-        <Route path="/" element={<UserLogin setLogin = {setLogin} setCreateUser = {setCreateUser}/>} />
+        <Route path="/" element={<UserLogin setLogin = {setLogin}/>} />
         <Route path="/user" element={<CreateUser/>} />
       </Routes>
   </Router>
