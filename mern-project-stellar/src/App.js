@@ -17,26 +17,18 @@ import GuessAnswer from "./components/guess-answer.component.js";
 
 function App() {
   const [loggedin, setLogin] = useState();
-  const [User, setCreateUser] = useState();
 
+//User is first directed to the login page and it does not allow the user to access certain pages until they login
   if (!loggedin){
-    return <Router>
+    return (
+    <Router>
       <Routes>
-      {/* <UserLogin setLogin = {setLogin} setCreateUser = {setCreateUser} /> */}
         <Route path="/" element={<UserLogin setLogin = {setLogin} setCreateUser = {setCreateUser}/>} />
         <Route path="/user" element={<CreateUser/>} />
       </Routes>
   </Router>
-  }
-  
-  // if (!User){
-  //   return <Router>
-  //     {/* <Routes> */}
-  //     <CreateUser setCreateUser = {setCreateUser} />
-  //     {/* <Route path="/user" element={<CreateUser/>} /> */}
-  //     {/* </Routes> */}
-  // </Router>
-  // }
+  );
+}
 
 
   return (

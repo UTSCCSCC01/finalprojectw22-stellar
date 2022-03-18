@@ -40,15 +40,10 @@
 }
 
 .login-wrapper > form > div > button {
-    /* flex: 1; */
     border-radius: 6px;
     padding: 7px;
     text-align: center;
     font-size: 14px;
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center;
-    text-align: center; */
     background-color: rgba(103, 133, 202, 0.801);
     
 }
@@ -56,5 +51,5 @@
 .login-wrapper > form > div > link {
     border-radius: 6px;
     font-size: 14px;
-    padding: 7px;
+    color:rgb(139, 27, 27);
 }
