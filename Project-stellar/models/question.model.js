@@ -6,14 +6,18 @@ const questionSchema = new Schema({
   question: {
     type: String,
     required: true,
-    unique: true,
-    minlength: 3
   },
   answer: {
     type: String,
     required: true,
-    unique: true,
-    minlength: 3
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  difficulty: {
+    type: String,
+    required: true,
   }
 });
 
