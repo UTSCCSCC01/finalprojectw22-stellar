@@ -1,0 +1,46 @@
+
+button{
+    width: 120px;
+    height: 80px;
+    margin: 5px;
+  }
+  .availableButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .disabledButton{
+
+    background-color: #0000005d; /* Green */
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .numButtonGreen{
+    width: 120px;
+    height: 80px;
+    margin: 5px;
+    background-color: rgb(73, 194, 69);
+    color: rgb(0, 0, 0);
+  }
+
+  .numButtonRed{
+    background-color: rgb(197, 48, 48);
+    color: rgb(0, 0, 0);
+  }
