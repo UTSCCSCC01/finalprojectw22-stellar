@@ -12,6 +12,7 @@ import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import GuessAnswer from "./components/guess-answer.component.js";
+import BoardPage from "./components/board-page.component";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/create" element={<CreateExercise/>} />
         <Route path="/user" element={<CreateUser/>} />
         <Route path="/guess" element={<GuessAnswer/>} />
+        <Route path="/boardpage" element={<BoardPage/>} />
       </Routes>
     </Router>
   );
