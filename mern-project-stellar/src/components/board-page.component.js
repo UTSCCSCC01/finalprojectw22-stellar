@@ -84,7 +84,6 @@ export default class BoardPage extends Component {
   questionSelect = () => {
     alert('Prompt Question / Show Answer Here for Question');
     this.setState({ turn: this.state.turn + 1 });
-
     if (this.state.turn == 4){
       this.setState({ turn: 1 })
     }
