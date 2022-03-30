@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -11,6 +11,7 @@ import ExercisesList from "./components/exercises-list.component";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
+import Lobby from "./components/lobby.component";
 import UserLogin from "./components/user-login.component.js";
 import GuessAnswer from "./components/guess-answer.component.js";
 import BoardPage from "./components/board-page.component";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/edit/:id" element={<EditExercise/>} />
         <Route path="/create" element={<CreateExercise/>} />
         <Route path="/user" element={<CreateUser/>} />
+        <Route path="/lobby" element={<Lobby/>} />
         <Route path="/login" element={<UserLogin/>} />
         <Route path="/guess" element={<GuessAnswer/>} />
         <Route path="/boardpage" element={<BoardPage/>} />
