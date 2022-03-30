@@ -33,7 +33,7 @@
 
     Your mark: 2
     
-  summary.md Total Mark: 6 / 8
+  summary.md Total Mark: 7 / 8
 
 ---
 ## competition.md (Max 2 marks)
