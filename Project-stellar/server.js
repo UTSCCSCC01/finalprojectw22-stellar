@@ -25,6 +25,10 @@ const usersRouter = require('./controllers/users');
 app.use('/users', usersRouter)
 ////////////////////////////////////////////
 
+//hooking up the quetions and answers to the database
+const questionsRouter = require('./controllers/questions');
+app.use('/questions', questionsRouter)
+
 //Configuring our app 
 app.set('view engine', 'ejs')
 //Where our views will be coming from (from the views folder) (views folder is for our server render views)

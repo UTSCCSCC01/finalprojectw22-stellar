@@ -1,0 +1,13 @@
+.guessAnswer {
+    text-align: center;
+    width: 20%;
+    height: 70px;
+    border-radius: 0px;
+    position: relative;
+    background-color: rgba(142, 150, 253, 0.883);
+    transition: 0.3s all;
+  }
+
+.guessAnswer:hover{
+    background-color: rgba(26, 59, 246, 0.45);
+}
