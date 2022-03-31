@@ -48,6 +48,7 @@ export default class Lobby extends Component {
 
     }
 
+    // Removes player from the server and updates client player and status after the fact
     removePlayer = async (room, lobbyID) => {
 
       const res = await axios.post("http://localhost:5000/game-browser/removePlayer", {room: room, lobbyID: lobbyID})
@@ -58,6 +59,7 @@ export default class Lobby extends Component {
       
     };
 
+    // Updates the clients status with the verion on the server
     updateStatus = async (room) => {
 
       const res = await axios.post("http://localhost:5000/game-browser/getStatus", {room: room})
@@ -67,6 +69,7 @@ export default class Lobby extends Component {
       console.log(status)
     };
 
+    // Updates the clients players with the verion on the server
     updatePlayers = async (room) => {
 
       const res = await axios.post("http://localhost:5000/game-browser/getPlayers", {room: room})
@@ -76,6 +79,7 @@ export default class Lobby extends Component {
       console.log(players)
     };
 
+    // Initialize new player on server and broadcast to every other user in the room that they need to update
     newPlayer = async (room) => {
       const res = await axios.post("http://localhost:5000/game-browser/newPlayer", {room: room, lobbyID: this.state.lobbyID})
       console.log("NEWPLAYER")
@@ -85,6 +89,7 @@ export default class Lobby extends Component {
       
     };
 
+    // Update server status with client-side status
     changeStatus = async () =>{
       this.setState({ready: !this.state.ready})
 
