@@ -4,6 +4,7 @@ const Queue = require('@supercharge/queue-datastructure')
 
 let activeGames = new Object();
 
+// Assign game ID and initialize game lobby
 router.route('/getNewID').get((req, res) => {
     let gameID = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
     
@@ -17,12 +18,14 @@ router.route('/getNewID').get((req, res) => {
         
 });
 
+// Get all active games 
 router.route('/getGames').get((req, res) => {
 
     res.send(activeGames)
         
 });
 
+// Get all players in the room
 router.route('/getPlayers').post((req, res) => {
 
     console.log("GETPLAYERS")
@@ -34,6 +37,7 @@ router.route('/getPlayers').post((req, res) => {
         
 });
 
+// Add user to room
 router.route('/newPlayer').post((req, res) => {
 
     activeGames[req.body.room].numPlayers += 1
@@ -49,9 +53,9 @@ router.route('/newPlayer').post((req, res) => {
     res.send(activeGames[req.body.room].players)
 
 
-        // REMOVE PLAYER ON DISCONNECT AND UPDATE STATUS ON CLICK FOR ALL
 });
 
+// Remove user from room
 router.route('/removePlayer').post((req, res) => {
     console.log("REMOVEPLAYER")
 
@@ -70,6 +74,7 @@ router.route('/removePlayer').post((req, res) => {
         // REMOVE PLAYER ON DISCONNECT AND UPDATE STATUS ON CLICK FOR ALL
 });
 
+// Updates status of all players in the room
 router.route('/changeStatus').post((req, res) => {
 
     console.log("changeStatus")
@@ -83,6 +88,7 @@ router.route('/changeStatus').post((req, res) => {
         
 });
 
+// Get status of all players in the room
 router.route('/getStatus').post((req, res) => {
 
     console.log("GETStatus")
