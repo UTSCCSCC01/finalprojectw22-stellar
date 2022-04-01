@@ -125,6 +125,7 @@ export default class BoardPage extends Component {
       let btn_class55 = this.state.available55 ? "availableButton" : "disabledButton";
 
         return (
+          <div className="login-wrapper">
           <div id="parent">
           
           
@@ -226,24 +227,24 @@ export default class BoardPage extends Component {
                 orientation="horizontal"
                 aria-label="horizontal outlined button group"
               >
-            <Button variant="contained" color="success" onClick={this.Player1Inc}>+100</Button>
-            <Button variant="contained" color="error" onClick={this.Player1Dec}>-100</Button>
-            {<h2>P1 Score: { this.state.player1Score }</h2>}
+            <button className="add-button" onClick={this.Player1Inc}>+100</button>
+            <button className="subtract-button" onClick={this.Player1Dec}>-100</button>
+            {<h4>P1 Score: { this.state.player1Score }</h4>}
 
-            <Button variant="contained" color="success" onClick={this.Player2Inc}>+100</Button>
-            <Button variant="contained" color="error" onClick={this.Player2Dec}>-100</Button>
-            {<h2>P2 Score: { this.state.player2Score }</h2>}
+            <button className="add-button" onClick={this.Player2Inc}>+100</button>
+            <button className="subtract-button" onClick={this.Player2Dec}>-100</button>
+            {<h4>P2 Score: { this.state.player2Score }</h4>}
 
-            <Button variant="contained" color="success" onClick={this.Player3Inc}>+100</Button>
-            <Button variant="contained" color="error" onClick={this.Player3Dec}>-100</Button>
-            {<h2>P3 Score: { this.state.player3Score }</h2>}
+            <button className="add-button" onClick={this.Player3Inc}>+100</button>
+            <button className="subtract-button" onClick={this.Player3Dec}>-100</button>
+            {<h4>P3 Score: { this.state.player3Score }</h4>}
 
-            <Button variant="contained" color="success" onClick={this.Player4Inc}>+100</Button>
-            <Button variant="contained" color="error" onClick={this.Player4Dec}>-100</Button>
-            {<h2>P4 Score: { this.state.player4Score }</h2>}
+            <button className="add-button" onClick={this.Player4Inc}>+100</button>
+            <button className="subtract-button" onClick={this.Player4Dec}>-100</button>
+            {<h4>P4 Score: { this.state.player4Score }</h4>}
             </ButtonGroup>
             </div>
-            
+            </div>
           );
           
       }

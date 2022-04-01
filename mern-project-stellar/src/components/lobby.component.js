@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { EditText, EditTextarea } from 'react-edit-text';
 import 'react-edit-text/dist/index.css';
+import './lobby.css';
 
 import {io} from 'socket.io-client';
 import axios from 'axios';
@@ -133,11 +134,19 @@ export default class Lobby extends Component {
         return (
           <div className='main'>
 
-
                 <table className='options child'>
+                <div className="button-wrapper">
                   <tr><Link to="/create" className="nav-link">Change Map</Link></tr>
+                  </div>
+                  <br />
+                  <div className="button-wrapper">
                   <tr><Link to="/create" className="nav-link">Game Options</Link></tr>
+                  </div>
+                  <br />
+                  <div className="button-wrapper">
                   <tr><Link to="/create" className="nav-link">Kick Player</Link></tr>
+                  </div>
+
                 </table>
 
               

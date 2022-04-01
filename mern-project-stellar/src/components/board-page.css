@@ -1,11 +1,8 @@
 
-button{
+  .availableButton{
     width: 120px;
     height: 80px;
     margin: 5px;
-  }
-  .availableButton{
-    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -15,11 +12,14 @@ button{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(55, 67, 238);
   }
   
   .disabledButton{
-
-    background-color: #0000005d; /* Green */
+    width: 120px;
+    height: 80px;
+    margin: 5px;
     border: none;
     color: rgba(255, 255, 255, 0.5);
     padding: 15px 32px;
@@ -30,17 +30,59 @@ button{
     margin: 4px 2px;
     cursor: not-allowed;
     opacity: 0.6;
+    border-radius: 6px;
+    background-color: rgba(103, 133, 202, 0.212);
   }
 
-  .numButtonGreen{
-    width: 120px;
-    height: 80px;
+  .add-button{
+    width: 100px;
+    height: 40px;
     margin: 5px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
     background-color: rgb(73, 194, 69);
-    color: rgb(0, 0, 0);
   }
 
-  .numButtonRed{
+  .subtract-button{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
     background-color: rgb(197, 48, 48);
-    color: rgb(0, 0, 0);
   }
+
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    
+    /* height: 250px;
+    width: 300px; */
+    /* left:500px;
+    top:200px; */
+    /* border-radius: 22px; */
+    /* position: absolute; */
+    
+    background-color: rgba(102, 111, 240, 0.883);
+    transition: 0.3s all;
+    padding: 100px;
+}
