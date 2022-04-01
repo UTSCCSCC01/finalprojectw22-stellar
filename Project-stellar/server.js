@@ -89,6 +89,10 @@ io.on('connection', (socket) => {
         // socket.to(room).emit("update-players", room)
         // socket.to(room).emit("status-update", room)
     })
+    socket.on("message-sent", (msg, room, name) => {
+        console.log("message-sent: " + name + " " + msg)
+        socket.to(room).emit("message-broadcast", msg, room, name)
+    })
 });
   
 

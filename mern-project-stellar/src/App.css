@@ -81,7 +81,7 @@
   right:0;
 }
 
-.ready button {
+.ready-button {
   margin: 0 1em;
   width: 15em;
   height: 3em;
@@ -106,3 +106,46 @@ ul {
 .readyButton {
   background-color: rgb(64, 134, 64);
 }
+
+.chat-container {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  height: 350px;
+  border: #282c34 solid 1px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.chat-container input {
+  width: 100%;
+}
+
+.input-field {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: #282c34 1px solid;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282c34;
+  padding: 5px 10px;
+
+}
+.chat-log {
+  overflow: auto;
+  width: 100%;
+}
+
+.input-field button {
+  height: auto;
+  width: auto;
+}
+
+.input-field input {
+  width: auto;
+}
+

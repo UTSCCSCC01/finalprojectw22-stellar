@@ -10,8 +10,10 @@ import axios from 'axios';
 
 export default class Lobby extends Component {
 
-  constructor(){
-      super()
+  constructor(props){
+      super(props)
+
+      this.chatLog = []
 
       this.state = {
         ready: false,
@@ -21,7 +23,9 @@ export default class Lobby extends Component {
         players: ['Empty', 'Empty', 'Empty', 'Empty'], 
         status: ['Not Ready', 'Not Ready', 'Not Ready', 'Not Ready'],
         roomNum: window.location.pathname.split('/')[2],
-        lobbyID : (Math.floor(Math.random() * 10000) + 10000).toString().substring(1)
+        lobbyID : this.props.id,
+        inputValue: "",
+        chatLog: []
 
       }
 
@@ -39,13 +43,17 @@ export default class Lobby extends Component {
         // console.log(room)
       })
 
-
+      this.state.socket.on("message-broadcast", (msg, room, name) => {
+        console.log("message-sent: " + msg)
+        this.chatLog.push({name: name, msg: msg})
+        
+        this.setState({chatLog: this.chatLog})
+      })
 
       this.state.socket.on('user-left', (room, lobbyID) => {
         console.log("USER-LEFT")
         this.removePlayer(room, lobbyID)
-        });
-
+      })
     }
 
     // Removes player from the server and updates client player and status after the fact
@@ -79,15 +87,41 @@ export default class Lobby extends Component {
       console.log(players)
     };
 
-    // Initialize new player on server and broadcast to every other user in the room that they need to update
+    // Initialize new player on server and broadcast to every other users in the room that they need to update
     newPlayer = async (room) => {
       const res = await axios.post("http://localhost:5000/game-browser/newPlayer", {room: room, lobbyID: this.state.lobbyID})
       console.log("NEWPLAYER")
       console.log(res.data)
       this.setState({players: res.data})
       this.state.socket.emit('new-player', this.state.roomNum, this.state.lobbyID);
+      this.sendMessage(this.state.roomNum + " has joined")
       
     };
+
+    updateInputValue = (evt) => {
+      let updatedInputValue = evt.target.value;
+      
+
+      this.setState({inputValue: updatedInputValue});
+      console.log(this.state.inputValue)
+    }
+
+    sendMessage = (evt, msg="") => {
+      evt.preventDefault()
+      if (msg == "") {
+        this.chatLog.push({name: this.state.lobbyID, msg: this.state.inputValue})
+        this.setState({chatLog: this.chatLog})
+        this.state.socket.emit('message-sent', this.state.inputValue, this.state.roomNum, this.state.lobbyID)
+        this.setState({inputValue: ""});
+      } else {
+        console.log("HERE")
+        this.chatLog.push({name: this.state.lobbyID, msg: this.state.inputValue})
+        this.setState({chatLog: this.chatLog})
+        this.state.socket.emit('message-sent', msg, this.state.roomNum, this.state.lobbyID)
+        this.setState({inputValue: ""});
+      }
+      
+    }
 
     // Update server status with client-side status
     changeStatus = async () =>{
@@ -166,12 +200,25 @@ export default class Lobby extends Component {
               <img className='child' src={require('./Default.png')} />
 
               <div className='ready child'>
-              
-                <button className={btn_class} onClick={this.changeStatus.bind(this)}>
+
+                <div className='chat-container'>
+                  <div className='chat-log'>
+                    {this.chatLog.map((chat) => (
+                      <h2>{chat.name + ": " + chat.msg}<br></br></h2>
+                    ))}
+                  </div>
+                  <div className='input-field'>
+                    <form>
+                      <input size='75' value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)}></input>
+                      <button onClick={this.sendMessage.bind(this)}>Send</button>
+                    </form>
+                  </div>
+                  
+                </div>
+                <button className={btn_class + ' ready-button'} onClick={evt => this.changeStatus(evt)}>
                     {this.state.button}
                 </button>
-                <button>Force Start</button>
-
+                <button className='ready-button'>Force Start</button>
               </div>
                 
 
