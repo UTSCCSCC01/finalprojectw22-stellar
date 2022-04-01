@@ -214,6 +214,7 @@ export default class BoardPage extends Component {
       let btn_class55 = this.state.available55 ? "availableButton" : "disabledButton";
 
         return (
+          <div className="login-wrapper">
           <div id="parent">
           
           
@@ -365,8 +366,9 @@ export default class BoardPage extends Component {
             <Button variant="contained" color="error" onClick={this.Player4Dec}>-100</Button> */}
             {<h2>P4 Score: { this.state.player4Score }</h2>}
             {/* </ButtonGroup> */}
+
             </div>
-            
+            </div>
           );
           
       }
