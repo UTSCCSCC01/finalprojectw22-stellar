@@ -173,8 +173,6 @@ export default class Lobby extends Component {
                 <button>Force Start</button>
 
               </div>
-                
-
           </div>
         )
       }

@@ -74,11 +74,9 @@ export default class UserLogin extends Component {
         username: "Guest",
         password: ""
       }
-    
+
     const loggedin = user;
-   
     this.props.setLogin(user);
-    this.props.setCreateUser("true");
   }
   
 //   redirectToCreateUser(e) {
