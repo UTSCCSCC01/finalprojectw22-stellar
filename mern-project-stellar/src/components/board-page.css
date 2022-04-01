@@ -1,10 +1,10 @@
 
-/* button{
-    width: 120px;
+button{
+    /* width: 120px;
     height: 80px;
-    margin: 10px;
+    margin: 10px; */
     
-  } */
+  }
   .availableButton{
     background-color: #4CAF50; /* Green */
 
@@ -71,6 +71,7 @@
     cursor: pointer;
     border-radius: 6px;
     background-color: rgb(197, 48, 48);
+  }
 
   .login-wrapper {
     display: flex;
