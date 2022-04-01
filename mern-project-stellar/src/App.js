@@ -17,6 +17,7 @@ import GuessAnswer from "./components/guess-answer.component.js";
 import BoardPage from "./components/board-page.component";
 
 
+
 function App() {
   const [loggedin, setLogin] = useState();
 
@@ -25,7 +26,7 @@ function App() {
     return (
     <Router>
       <Routes>
-        <Route path="/" element={<UserLogin setLogin = {setLogin} setCreateUser = {setCreateUser}/>} />
+        <Route path="/" element={<UserLogin setLogin = {setLogin}/>} />
         <Route path="/user" element={<CreateUser/>} />
       </Routes>
   </Router>
@@ -34,10 +35,13 @@ function App() {
 
 
   return (
+    
     <Router>
+      <h1> {loggedin.username} </h1>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<ExercisesList/>} />
+        
         <Route path="/edit/:id" element={<EditExercise/>} />
         <Route path="/create" element={<CreateExercise/>} />
         <Route path="/user" element={<CreateUser/>} />

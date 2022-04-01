@@ -41,7 +41,7 @@ export default class GuessAnswer extends Component {
     return (
       <div>
         <h3>Guess Answer</h3>
-        <form onSubmit={this.onSubmit}>
+        <form >
           <div className="guessAnswer"> 
             <label>Guess here: </label>
             <input  type="text"
@@ -54,6 +54,7 @@ export default class GuessAnswer extends Component {
           <div className="guessAnswerButton">
             <input type="submit" value="Submit Answer" className="btn btn-primary" />
           </div>
+
         </form>
       </div>
     )

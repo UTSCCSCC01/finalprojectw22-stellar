@@ -1,9 +1,12 @@
 
-button{
+
+
+/* button{
     width: 120px;
     height: 80px;
-    margin: 5px;
-  }
+    margin: 10px;
+    
+  } */
   .availableButton{
     background-color: #4CAF50; /* Green */
     border: none;
@@ -13,7 +16,7 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 50px;
     cursor: pointer;
   }
   
@@ -27,7 +30,7 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 50px;
     cursor: not-allowed;
     opacity: 0.6;
   }
@@ -44,3 +47,4 @@ button{
     background-color: rgb(197, 48, 48);
     color: rgb(0, 0, 0);
   }
+  
