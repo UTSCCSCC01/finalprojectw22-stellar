@@ -1,8 +1,13 @@
 
-  .availableButton{
+/* button{
     width: 120px;
     height: 80px;
-    margin: 5px;
+    margin: 10px;
+    
+  } */
+  .availableButton{
+    background-color: #4CAF50; /* Green */
+
     border: none;
     color: white;
     padding: 15px 32px;
@@ -10,7 +15,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 50px;
     cursor: pointer;
     border-radius: 6px;
     background-color: rgba(72, 19, 122, 0.801);
@@ -27,7 +32,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 50px;
     cursor: not-allowed;
     opacity: 0.6;
     border-radius: 6px;
@@ -66,7 +71,6 @@
     cursor: pointer;
     border-radius: 6px;
     background-color: rgb(197, 48, 48);
-  }
 
   .login-wrapper {
     display: flex;
@@ -85,4 +89,7 @@
     background-color: rgba(102, 111, 240, 0.883);
     transition: 0.3s all;
     padding: 100px;
-}
+
+    color: rgb(0, 0, 0);
+  }
+
