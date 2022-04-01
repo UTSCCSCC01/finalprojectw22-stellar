@@ -20,7 +20,10 @@ export default class Navbar extends Component {
           <Link to="/user" className="nav-link">Create User</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/lobby" className="nav-link">Create Game</Link>
+            <Link to="/game-browser" className="nav-link">Games</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/lobby" className="nav-link">Create Game</Link>
           </li>
           <li className="navbar-item">
           <Link to="/guess" className="nav-link">Guess Answer</Link>
