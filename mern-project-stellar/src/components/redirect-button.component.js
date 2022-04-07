@@ -23,7 +23,7 @@ const RedirectButton = (props) => {
 
   return (
     <>
-      <button onClick={handleClick}>
+      <button class="btn btn-secondary ms-2" onClick={handleClick}>
           {props.value}
       </button>
     </>
