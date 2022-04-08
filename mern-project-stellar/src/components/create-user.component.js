@@ -49,29 +49,40 @@ export default class CreateUser extends Component {
   render() {
     return (
       <div>
-        <h3>Create New User</h3>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group"> 
-            <label>Username: </label>
-            <input  type="text"
-                required
-                className="form-control"
-                value={this.state.username}
-                onChange={this.onChangeUsername}
-                />
+        <div class="d-flex justify-content-center">
+          <h1 class="display-1 justify-content-center mt-3">Create User</h1>
+        </div>
 
-            <label>Password: </label>
-            <input  type="password"
-                required
-                className="form-control"
-                value={this.state.password}
-                onChange={this.onChangePassword}
-                />
+        <div class="row justify-content-center">
+
+
+          <div class="col-lg-4 col-md-6 col-12">
+          <h3 class="display-6 mt-5 mb-4">Create New User</h3>
+
+            <form onSubmit={this.onSubmit}>
+              <div className="form-group"> 
+                <label>Username: </label>
+                <input  type="text"
+                    required
+                    className="form-control"
+                    value={this.state.username}
+                    onChange={this.onChangeUsername}
+                    />
+
+                <label>Password: </label>
+                <input  type="password"
+                    required
+                    className="form-control"
+                    value={this.state.password}
+                    onChange={this.onChangePassword}
+                    />
+              </div>
+              <div className="form-group mt-3">
+                <input type="submit" value="Create User" className="btn btn-primary" />
+              </div>
+            </form>
           </div>
-          <div className="form-group">
-            <input type="submit" value="Create User" className="btn btn-primary" />
-          </div>
-        </form>
+        </div>
       </div>
     )
   }
