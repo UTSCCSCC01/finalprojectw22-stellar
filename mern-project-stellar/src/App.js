@@ -44,7 +44,7 @@ function App() {
       <h1> {loggedin.username} </h1>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<ExercisesList/>} />
+        <Route exact path="/" element={<GameBrowser id={id}/>} />
         
         <Route path="/edit/:id" element={<EditExercise/>} />
         <Route path="/create" element={<CreateExercise/>} />
