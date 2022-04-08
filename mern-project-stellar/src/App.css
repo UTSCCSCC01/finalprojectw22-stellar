@@ -36,3 +36,116 @@
     transform: rotate(360deg);
   }
 }
+
+.main {
+  position:relative;
+  height: 90vh;
+  width: 100%;
+  padding:0;
+}
+.child {
+  position:absolute;
+  margin: 3em;
+
+}
+.options {
+  top:0;
+  left:0;    
+  font-size: x-large;
+  
+}
+
+.players {
+  font-size: x-large;
+  top:0;
+  right:0;
+  width: 30em;
+  height: auto;
+  padding: 3em;
+}
+
+
+.status {
+  text-align: right;
+}
+.main img {
+  border:rgb(0, 0, 0) solid 10px;
+  bottom:0;
+  left:0;
+  width: 40em;
+  height: auto;
+}
+.ready {
+  padding: 3em;
+  bottom:0;
+  right:0;
+}
+
+.ready-button {
+  margin: 0 1em;
+  width: 15em;
+  height: 3em;
+  font-size: x-large;
+  font-weight: bolder;
+  border:rgb(209, 209, 209) 5px solid;
+  font-family: monospace;
+  background-color: rgb(218, 218, 218);
+  border-radius: 1em;
+}
+
+ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.notReadyButton {
+  background-color: red;
+}
+
+.readyButton {
+  background-color: rgb(64, 134, 64);
+}
+
+.chat-container {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  height: 350px;
+  border: #282c34 solid 1px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.chat-container input {
+  width: 100%;
+}
+
+.input-field {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: #282c34 1px solid;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282c34;
+  padding: 5px 10px;
+
+}
+.chat-log {
+  overflow: auto;
+  width: 100%;
+}
+
+.input-field button {
+  height: auto;
+  width: auto;
+}
+
+.input-field input {
+  width: auto;
+}
+
