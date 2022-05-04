@@ -1,7 +1,6 @@
 ﻿finalprojectw22-stellar
 
 <h1 align="center"><span style="font-family:Papyrus; font-size:2em;">Stellar Jeopardy</span></h1>
-<span style="font-family:Papyrus; font-size:1em;">(Real Name TBA)</span>
 <h4>Developer: Team Stellar</h4>
 
 <p align="center">
@@ -56,7 +55,7 @@ To contribute to the project follow the steps to get started:
 The following are requirements to develop the web app:
 1) [Node.js](https://nodejs.org/en/) is a runtime environment for executing JavaScript without a browser, and is used to create full-stack apps using Javascript.
 2) [MongoDB](https://www.mongodb.com/) will be used to develop the Database
-3) We will use [MEAN.JS boilerplate](https://meanjs.org/docs.html) for the development. The download instructions can be found in the link provided
+3) We will use [MERN.JS boilerplate](https://mern.js.org/) for the development. The download instructions can be found in the link provided
 
 Installation instructions in order to run webapp locally on your machine:
 1) Use `git clone` to clone the main directory of Stellar Jeopardy from it's [Github](https://github.com/UTSCCSCC01/finalprojectw22-stellar) page
